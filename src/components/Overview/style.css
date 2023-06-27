@@ -1,0 +1,29 @@
+.overview-container {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        flex-direction: column-reverse;
+    }
+
+    @media (max-width: 768px) {
+        > img {
+            width: 100%;
+        }
+    }
+}
+
+
+.overview-container__header {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+        align-items: center;
+    }
+}
+
+.overview-container__header__button {
+    width: 200px;
+}
